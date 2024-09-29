@@ -26,7 +26,7 @@
 }
 
 .banner-button {
-    margin-top: 60px; /* Space between text and button */
+    margin-top: 90px; /* Space between text and button */
     transition: all 1s ease; /* Smooth transition for button */
     padding: 10px 20px; /* Add padding for a button-like appearance */
     background-color: #f6e58d; /* Background color (pale yellow) */
@@ -45,13 +45,13 @@
 .card {
     background-color: white;
     border-radius: 0.5rem; /* Tailwind's rounded-lg */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
-    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition for transform and z-index */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+    transition: transform 0.75s ease, z-index 1s ease; /* Smooth transition for transform and z-index */
 }
 
 .card:hover {
     transform: translateY(-10px); /* Move the card up */
-    z-index: 10; /* Bring the card to the foreground */
+    z-index: 20; /* Bring the card to the foreground */
 }
 
 .footer {
@@ -66,8 +66,9 @@
 	height: 10vh;
 }
 .shrink .banner-image {
-    height: 60px; /* Shrink the image height */
-    left: 0; /* Keep the image aligned to the left */
+	transition:  all 1s ease;
+    height: 10%; /* Shrink the image height */
+    left: -20; /* Keep the image aligned to the left */
 }
 
 .shrink .banner-content {
