@@ -1,6 +1,6 @@
 .banner {
     height: 80vh; /* Banner covers 80% of the viewport height */
-    background-color: #3b82f6; /* Tailwind's blue-500 */
+    background-color: #f6e58d; /* Tailwind's blue-500 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,15 +19,27 @@
 }
 
 .banner-content {
-    transition: all 0.3s ease; /* Smooth transition for content */
+    transition: all 1s ease; /* Smooth transition for content */
     text-align: center; /* Center text */
     z-index: 1; /* Ensure text is above the image */
     position: relative; /* Position relative for stacking */
 }
 
 .banner-button {
-    margin-top: 10px; /* Space between text and button */
-    transition: all 0.3s ease; /* Smooth transition for button */
+    margin-top: 60px; /* Space between text and button */
+    transition: all 1s ease; /* Smooth transition for button */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    background-color: #f6e58d; /* Background color (pale yellow) */
+    color: #333; /* Text color */
+    border: 2px solid #d4c95c; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.banner-button:hover {
+    background-color: #d4c95c; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .card {
@@ -50,6 +62,9 @@
 }
 
 /* Styles for when the banner is shrunk */
+.shrink .banner {
+	height: 10vh;
+}
 .shrink .banner-image {
     height: 60px; /* Shrink the image height */
     left: 0; /* Keep the image aligned to the left */
