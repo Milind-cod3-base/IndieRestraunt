@@ -1,51 +1,56 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Simple Tailwind CSS Layout</title>
-    </head>
-    <body class="bg-gray-100">
+</head>
+<body class="bg-gray-100">
 
-    <!-- Banner Section -->
-    <div id="banner" class="banner transition-all duration-300 flex items-center justify-center">
+<!-- Banner Section -->
+<div id="banner" class="banner transition-all duration-300 flex items-center justify-center">
     <img src="banner-image.jpg" alt="Banner Image" class="banner-image transition-all duration-300">
     <div class="banner-content transition-all duration-300">
-    <h1 class="text-white text-5xl font-bold">Welcome to Our Website</h1>
+        <h1 class="text-white text-5xl font-bold">Indie Man Restaurant</h1>
+        <button class="banner-button transition-all duration-300">Dummy Button</button>
     </div>
-    <button class="banner-button transition-all duration-300">Click Me</button>
-    </div>
+</div>
 
-    <!-- Cards Section -->
-    <div class="container mx-auto p-4">
+<!-- Cards Section -->
+<div class="container mx-auto p-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <div class="card">
-    <img src="image1.jpg" alt="Image 1" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-semibold mt-2">Card 1</h2>
-    <p class="mt-2">This is a description for card 1.</p>
+        <div class="card">
+            <img src="image1.jpg" alt="Image 1" class="w-full h-48 object-cover rounded-t-lg">
+            <h2 class="text-xl font-semibold mt-2">Card 1</h2>
+            <p class="mt-2">This is a description for card 1.</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Image 2" class="w-full h-48 object-cover rounded-t-lg">
+            <h2 class="text-xl font-semibold mt-2">Card 2</h2>
+            <p class="mt-2">This is a description for card 2.</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Image 3" class="w-full h-48 object-cover rounded-t-lg">
+            <h2 class="text-xl font-semibold mt-2">Card 3</h2>
+            <p class="mt-2">This is a description for card 3.</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Image 2" class="w-full h-48 object-cover rounded-t-lg">
+            <h2 class="text-xl font-semibold mt-2">Card 4</h2>
+            <p class="mt-2">This is a description for card 4.</p>
+        </div>
     </div>
-    <div class="card">
-    <img src="image2.jpg" alt="Image 2" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-semibold mt-2">Card 2</h2>
-    <p class="mt-2">This is a description for card 2.</p>
-    </div>
-    <div class="card">
-    <img src="image3.jpg" alt="Image 3" class="w-full h-48 object-cover rounded-t-lg">
-    <h2 class="text-xl font-semibold mt-2">Card 3</h2>
-    <p class="mt-2">This is a description for card 3.</p>
-    </div>
-    </div>
-    </div>
+</div>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-    <p>© 2023 Your Company. All rights reserved.</p>
-    </footer>
+<!-- Footer Section -->
+<footer class="footer">
+    <p>© 2024 Indie Man Company. All rights reserved.</p>
+</footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<!-- JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>

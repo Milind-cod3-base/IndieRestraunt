@@ -10,21 +10,23 @@
 
 .banner-image {
     height: 100%; /* Full height of the banner */
-    transition: all 0.3s ease; /* Smooth transition for image */
+    width: 100%; /* Full width of the banner */
+    object-fit: cover; /* Cover the area without distortion */
     position: absolute; /* Positioning the image */
+    top: 0; /* Align to the top */
     left: 0; /* Align to the left */
+    z-index: 0; /* Send the image to the back */
 }
 
 .banner-content {
     transition: all 0.3s ease; /* Smooth transition for content */
-    text-align: center; /* Center text when full */
+    text-align: center; /* Center text */
     z-index: 1; /* Ensure text is above the image */
+    position: relative; /* Position relative for stacking */
 }
 
 .banner-button {
-    position: absolute; /* Position the button absolutely */
-    right: 20px; /* Align to the right */
-    bottom: 20px; /* Align to the bottom */
+    margin-top: 10px; /* Space between text and button */
     transition: all 0.3s ease; /* Smooth transition for button */
 }
 
@@ -66,3 +68,5 @@
     right: 20px; /* Keep the button aligned to the right */
     bottom: 10px; /* Adjust the button position when shrunk */
 }
+
+   
