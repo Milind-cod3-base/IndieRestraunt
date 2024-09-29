@@ -1,6 +1,5 @@
 const banner = document.getElementById('banner');
-const bannerContent = document.querySelector('.banner-content');
-const bannerImage = document.querySelector('.banner-image');
+
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', function() {
