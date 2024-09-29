@@ -1,0 +1,55 @@
+.banner {
+    height: 80vh; /* Banner covers 80% of the viewport height */
+    background-color: #3b82f6; /* Tailwind's blue-500 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.3s ease; /* Smooth transition for height change */
+    position: relative; /* For absolute positioning of elements */
+}
+
+.banner-image {
+    height: 100%; /* Full height of the banner */
+    transition: all 0.3s ease; /* Smooth transition for image */
+    position: absolute; /* Positioning the image */
+    left: 0; /* Align to the left */
+}
+
+.banner-content {
+    transition: all 0.3s ease; /* Smooth transition for content */
+    text-align: center; /* Center text when full */
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition for transform and z-index */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Move the card up */
+    z-index: 10; /* Bring the card to the foreground */
+}
+
+.footer {
+    background-color: #1f2937; /* Tailwind's gray-800 */
+    color: white;
+    text-align: center;
+    padding: 0.5rem; /* Tailwind's p-2 */
+}
+
+/* Styles for when the banner is shrunk */
+.shrink .banner-image {
+    height: 60px; /* Shrink the image height */
+    left: 0; /* Keep the image aligned to the left */
+}
+
+.shrink .banner-content {
+    text-align: right; /* Align text to the right when shrunk */
+    transform: scale(0.8); /* Scale down the text */
+}
+
+.shrink .banner-content h1 {
+    font-size: 1.5rem; /* Smaller font size when shrunk */
+}
